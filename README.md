@@ -61,9 +61,9 @@ Referrer-Policy: same-origin
 {"token":"14beba260fb72b55130f5b0a7c51b2b75a21ba73"
 ```
 
-3. **cart/add/**
+3. ## cart/add/
 
-## Add item using the auth token
+#### Add item using the auth token
 
 ```
 $ curl -i localhost:8000/cart/add/ -d name=Milk -d description="A jar of awesome Milk" -d cost=40 -H 'Authorization: Token 14beba260fb72b55130f5b0a7c51b2b75a21ba73'
@@ -81,9 +81,9 @@ Referrer-Policy: same-origin
 {"id":3,"name":"Milk","description":"A jar of awesome Milk","cost":"40.00","created_at":"2020-08-05T11:48:42.880073Z"}
 ```
 
-4. **cart/list/**
+4. ## cart/list/
 
-# List items: Only authenticated users can list items
+#### List items: Only authenticated users can list items
 
 ```
 $ curl -i localhost:8000/cart/list/ -H 'Authorization: Token 14beba260fb72b55130f5b0a7c51b2b75a21ba73'
@@ -101,9 +101,9 @@ Referrer-Policy: same-origin
 [{"id":3,"name":"Milk","description":"A jar of awesome Milk","cost":"40.00","created_at":"2020-08-05T11:48:42.880073Z"},{"id":2,"name":"Bread","description":"A pack of awesome Bread","cost":"40.00","created_at":"2020-08-05T11:07:55.748504Z"},{"id":1,"name":"Egg","description":"An awesome egg","cost":"10.00","created_at":"2020-08-05T10:54:18.631150Z"}]
 ```
 
-5. **account/users/**
+5. ## account/users/
 
-# List user: Admin only
+#### List user: Admin only
 
 ```
 curl -i localhost:8000/account/users/ -H 'Authorization: Token 85cb7d7fb2347eea23f2912ba62d058e06e07234'
