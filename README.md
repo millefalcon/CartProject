@@ -22,9 +22,9 @@ password: 12345
 
 # APIs
 
-1. **account/register/**
+1. ## account/register/
 
-## User registration
+#### User registration
 
 ```
 $ curl -i localhost:8000/account/register/ -d username=owen -d password=owen12345 -d email=owen@email.com
@@ -42,9 +42,9 @@ Referrer-Policy: same-origin
 {"id":4,"username":"owen","email":"owen@email.com","password":"pbkdf2_sha256$216000$tcSl9zUZmk7E$ffJKvcgQZ4xn3wX3qsAEtQ9KOo7FQQAnyi0s5gjX7ks="}
 ```
 
-2. **api-token-auth/**
+2. ## api-token-auth/
 
-## Request authentication token
+#### Request authentication token
 
 ```
 $ curl -i localhost:8000/api-token-auth/ -d username=owen -d password=owen12345
